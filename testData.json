@@ -1,0 +1,100 @@
+{
+  "createOder": {
+    "created_at": "2019-11-07T21:50:12+00:00",
+    "status": "NEW",
+    "dropoff": {
+      "address": null,
+      "latitude": 47.84284957575306,
+      "longitude": 35.10294444859028
+    },
+    "pickup": {
+      "address": null,
+      "latitude": 47.835803,
+      "longitude": 35.11009362
+    },
+    "rider": {
+      "role": "rider",
+      "device_id": null,
+      "name": "Ms. Rider",
+      "phone_number": null
+    }
+  },
+  "deleteOrder": {
+    "created_at": "2019-11-07T21:50:12+00:00",
+    "status": "any",
+    "trip_id": "eb2f21fa-507a-45a4-bf91-9c571c63a4a7"
+  },
+  "acceptOrder": {
+    "before": {
+      "driver": null,
+      "status": "NEW"
+    },
+    "after": {
+      "status": "ACCEPTED",
+      "pickup": {
+        "address": null,
+        "latitude": 47.835903,
+        "longitude": 35.11459362
+      },
+      "driver": {
+        "role": "driver",
+        "device_id": "2744A672-D4A9-36E7-BC89-FDAA704114A8",
+        "name": "Mr. Driver",
+        "phone_number": null
+      }
+    }
+  },
+  "startRide": {
+    "before": {
+      "status": "REACHED_PICKUP",
+      "trip_id": "eb2f21fa-507a-45a4-bf91-9c571c63a4a7",
+      "driver": null
+    },
+    "after": {
+      "status": "STARTED_RIDE",
+      "dropoff": {
+        "address": null,
+        "latitude": 47.84284957575306,
+        "longitude": 35.10294444859028
+      },
+      "driver": {
+        "role": "driver",
+        "device_id": "12AA84CA-E4BF-44E1-AF93-7D5E0163E083",
+        "name": "Mr. Driver",
+        "phone_number": null
+      }
+    }
+  },
+  "rejectRide": {
+    "before": {
+      "status": "any",
+      "trip_id": "eb2f21fa-507a-45a4-bf91-9c571c63a4a7",
+      "driver": null
+    },
+    "after": {
+      "status": "CANCELLED",
+      "driver": {
+        "role": "driver",
+        "device_id": "12AA84CA-E4BF-44E1-AF93-7D5E0163E083",
+        "name": "Mr. Driver",
+        "phone_number": null
+      }
+    }
+  },
+  "endRide": {
+    "before": {
+      "status": "any",
+      "trip_id": "eb2f21fa-507a-45a4-bf91-9c571c63a4a7",
+      "driver": null
+    },
+    "after": {
+      "status": "COMPLETED",
+      "driver": {
+        "role": "driver",
+        "device_id": "12AA84CA-E4BF-44E1-AF93-7D5E0163E083",
+        "name": "Mr. Driver",
+        "phone_number": null
+      }
+    }
+  }
+}

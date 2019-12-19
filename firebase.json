@@ -1,0 +1,14 @@
+{
+  "emulators": {
+    "restPort": {
+      "port": "5005"
+    },
+    "firestore": {
+      "port": "8008"
+    }
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}
