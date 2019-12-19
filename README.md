@@ -18,8 +18,8 @@ Firebase Cloud Functions require a paid account to make outbound API calls. This
 1. Clone the repo.
 
 ```bash
-git clone https://github.com/hypertrack/uber-for-x-firebase.git
-cd uber-for-x-firebase
+git clone https://github.com/hypertrack/ridesharing-firebase.git
+cd ridesharing-firebase
 ```
 
 2. Install Firebase tools CLI
@@ -34,8 +34,7 @@ npm install -g firebase-tools
 firebase login
 firebase use --add
 ```
-Select the project from dropdown menu
-
+Select the project from dropdown menu. You can use any alias for the project.
 
 4. Install function dependencies
 
@@ -59,7 +58,7 @@ firebase deploy --only functions
 * Copy the trigger URL for `onTripUpdate` function
   ![Functions Dashboard](Images/FunctionsDashboard.png)
 * Go to HyperTrack's dashboard [setup page](https://dashboard.hypertrack.com/setup) and add this URL as a webhook URL.
-* Go back to Firebase and open the Logs tab. Search for `onTripUpdate` function's log with `SubscriptionConfirmation` message. Open the `SubscribeURL` in browser. This will activate the webhook.
+* Go back to Firebase and open the Logs tab. Search for `onTripUpdate` function's log with `SubscriptionConfirmation` message. Open the `SubscribeURL` in browser (XML file will appear). This webhook activation can take a few minutes. Refresh the dashboard's [setup page](https://dashboard.hypertrack.com/setup) to make sure, that activation was successful.
   ![Functions Logs](Images/FunctionsLogs.png)
 
 8. Your Cloud Functions backend is now ready to interface with HyperTrack APIs.
