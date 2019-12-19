@@ -45,7 +45,7 @@ cd functions ; npm install ; cd ..
 
 5. Configure functions with HyperTrack API Keys
 
-Copy `AccountId` and `SecretKey` from HyperTrack's dashboard [setup page](https://dashboard.hypertrack.com/setup). Paste them in `/functions/index.js` file into placeholders on line 9. Keep the `:` separator between them.
+Copy `AccountId` and `SecretKey` from HyperTrack's dashboard [setup page](https://dashboard.hypertrack.com/setup). Paste them in `/functions/index.js` file into [placeholders on line 9](https://github.com/hypertrack/ridesharing-firebase/blob/875bf0a719153eecdd6eb5694e4a1c715142d242/functions/index.js#L9). Keep the `:` separator between them.
 
 6. Deploy functions into your Firebase Ridesharing project
 
