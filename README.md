@@ -65,7 +65,7 @@ firebase deploy --only functions
 
 ## Documentation
 
-For detailed documentation of the APIs, customizations and what all you can build using HyperTrack, please visit the official [docs](https://docs.hypertrack.com/).
+For detailed documentation of the APIs, customizations and what all you can build using HyperTrack, please visit the official [docs](https://www.hypertrack.com/docs/).
 
 ## Frequently Asked Questions
 
