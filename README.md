@@ -58,8 +58,6 @@ firebase deploy --only functions
 * Copy the trigger URL for `onTripUpdate` function
   ![Functions Dashboard](Images/FunctionsDashboard.png)
 * Go to HyperTrack's dashboard [setup page](https://dashboard.hypertrack.com/setup) and add this URL as a webhook URL.
-* Go back to Firebase and open the Logs tab. Search for `onTripUpdate` function's log with `SubscriptionConfirmation` message. Open the `SubscribeURL` in browser (XML file will appear). The webhook activation can take a few minutes. Refresh the dashboard's [setup page](https://dashboard.hypertrack.com/setup) to make sure, that activation was successful.
-  ![Functions Logs](Images/FunctionsLogs.png)
 
 8. Your Cloud Functions backend is now ready to interface with HyperTrack APIs.
 
