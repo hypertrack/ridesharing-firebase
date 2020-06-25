@@ -167,7 +167,7 @@ exports.deleteOrder = functions.firestore
 
 // http://localhost:5001/<your project name e.g. uber-for-x-58779>/us-central1/onTripUpdate
 exports.onTripUpdate = functions.https.onRequest(async (req, res) => {
-    const data = JSON.parse(req.body);
+    const data = JSON.parse(req.rawBody);
     console.log("onTripUpdate:data: " + JSON.stringify(data));
     for (let i = 0; i < data.length; i++) {
         const event = data[i];
