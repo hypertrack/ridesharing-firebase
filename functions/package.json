@@ -14,7 +14,7 @@
   "dependencies": {
     "firebase-admin": "^8.6.0",
     "firebase-functions": "^3.3.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "request": "2.88.0",
     "request-promise": "4.2.5",
     "js-base64": "2.5.1"
